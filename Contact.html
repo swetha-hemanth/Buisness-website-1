@@ -1,14 +1,15 @@
-  <!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Shree Raggvendra Travels Ooty</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       background: #f9f9f9;
+      color: #333;
     }
 
     header, footer {
@@ -39,26 +40,25 @@
       padding: 2rem;
       max-width: 600px;
       margin: auto;
+      text-align: center;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+    .contact-box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    input, textarea {
-      padding: 10px;
-      font-size: 16px;
+    .contact-box p {
+      font-size: 18px;
+      margin: 15px 0;
     }
 
-    button {
-      background-color: #2e8b57;
-      color: white;
-      padding: 10px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
+    .contact-box a {
+      color: #2e8b57;
+      font-weight: bold;
+      text-decoration: none;
     }
 
     .whatsapp-button {
@@ -97,15 +97,19 @@
   </nav>
 
   <section>
-    <h2>Send Us a Message</h2>
-    <form action="https://formsubmit.co/manju9041mp@gmail.com" method="POST">
-      <input type="text" name="name" required placeholder="Your Name">
-      <input type="email" name="email" required placeholder="Your Email">
-      <textarea name="message" rows="5" required placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="contact-box">
+      <p>📍 <strong>Office Address:</strong><br>
+      Do/47, Raja Lodge, Near Main Bus Stand, Ooty – 643001</p>
+
+      <p>📞 <strong>Phone:</strong> <a href="tel:+919384989077">+91 93849 89077</a></p>
+
+      <p>💬 <strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=919487840509" target="_blank">Click to Chat on WhatsApp</a></p>
+
+      <p>📧 <strong>Email:</strong> <a href="mailto:manju9041mp@gmail.com">manju9041mp@gmail.com</a></p>
+    </div>
   </section>
 
+  <!-- WhatsApp Floating Button -->
   <a class="whatsapp-button" href="https://api.whatsapp.com/send?phone=919487840509" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
