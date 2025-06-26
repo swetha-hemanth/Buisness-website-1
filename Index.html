@@ -1,175 +1,108 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shree Raggvendra Travels Ooty</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: #f4f4f4;
+      color: #333;
     }
+
     .hero {
-      background-image: url('https://images.unsplash.com/photo-1612817153186-32e7f9a3b283?auto=format&fit=crop&w=1600&q=80'); /* Scenic Ooty background */
+      background-image: url('https://images.unsplash.com/photo-1612817153186-32e7f9a3b283?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
-      color: white;
       text-align: center;
-      padding: 100px 20px 60px;
-      position: relative;
+      padding: 80px 20px 50px;
+      color: white;
     }
+
     .logo {
-      width: 100px;
-      height: auto;
+      width: 120px;
       border-radius: 50%;
       border: 3px solid white;
       background: white;
       margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
+
     .title {
       font-size: 28px;
       font-weight: bold;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0, 0, 0, 0.5);
       display: inline-block;
-      padding: 5px 15px;
-      border-radius: 10px;
+      padding: 6px 18px;
+      border-radius: 12px;
     }
+
     .contact-info {
       background: #2e8b57;
       color: white;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
       font-size: 15px;
     }
+
     nav {
-      background: #444;
-      padding: 0.5rem;
+      background: #333;
+      padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
     section {
       padding: 2rem;
       text-align: center;
     }
+
     footer {
-      background: #222;
-      color: white;
+      background: #111;
+      color: #ddd;
       text-align: center;
       padding: 1rem;
+      font-size: 14px;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      padding: 14px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    .whatsapp-button img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .whatsapp-button:hover {
+      background: #128C7E;
     }
   </style>
 </head>
-  <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #fafafa;
-    color: #333;
-  }
-
-  .hero {
-    background-image: url('https://images.unsplash.com/photo-1612817153186-32e7f9a3b283?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px 60px;
-    position: relative;
-  }
-
-  .logo {
-    width: 110px;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid white;
-    background: white;
-    margin-bottom: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
-
-  .title {
-    font-size: 30px;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 6px 20px;
-    border-radius: 12px;
-  }
-
-  .contact-info {
-    background: #2e8b57;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    font-size: 15px;
-  }
-
-  nav {
-    background: #333;
-    padding: 0.5rem;
-    text-align: center;
-  }
-
-  nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-
-  nav a:hover {
-    color: #ffd700;
-  }
-
-  section {
-    padding: 2rem;
-    text-align: center;
-  }
-
-  footer {
-    background: #111;
-    color: #ddd;
-    text-align: center;
-    padding: 1rem;
-    font-size: 14px;
-  }
-
-  .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 18px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 28px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    text-decoration: none;
-    z-index: 999;
-  }
-
-  .whatsapp-button:hover {
-    background: #128C7E;
-  }
-  </style>
 <body>
 
   <div class="hero">
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="Logo" class="logo" />
     <div class="title">Shree Raggvendra Travels Ooty</div>
   </div>
 
@@ -183,38 +116,4 @@
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <section>
-    <h2>Welcome to Ooty!</h2>
-    <p>We provide the best car and bus sightseeing packages in and around Ooty. Book your dream trip with us now!</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Shree Raggvendra Travels Ooty. All rights reserved.</p>
-  </footer>
-<a class="whatsapp-button" href="https://api.whatsapp.com/send?phone=919487840509" target="_blank" title="Chat with us on WhatsApp">💬</a>
-
-<style>
-  .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 18px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 28px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    text-decoration: none;
-    z-index: 999;
-  }
-
-  .whatsapp-button:hover {
-    background: #128C7E;
-  }
-</style>
-</body>
-</html>
+    <a href="
